@@ -33,26 +33,6 @@ The scraped data will be saved in a CSV file named `<location>_properties.csv` i
 - [requests](https://pypi.org/project/requests/): Used to send HTTP requests to the website.
 - [BeautifulSoup](https://pypi.org/project/beautifulsoup4/): Used to parse HTML content and extract data.
 
-## Project Structure
-
-```
-realestate_scraping/
-│
-├── README.md
-├── requirements.txt
-├── scraper/
-│   ├── __init__.py
-│   ├── realestate_scraper.py
-│   └── utils.py
-│
-└── examples/
-    ├── example_usage.ipynb
-    └── example_usage.py
-```
-
-- `scraper/`: Contains the web scraping script.
-- `examples/`: Contains example usage files (Jupyter notebook and Python script).
-
 ## Example Usage
 
 Check out the [example_usage.ipynb](examples/example_usage.ipynb) Jupyter notebook or [example_usage.py](examples/example_usage.py) Python script to see how to use the scraper in your own projects.
