@@ -1,12 +1,9 @@
-// backend/routes/quiz.js
-
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
 const Quiz = require('../models/Quiz');
 const Question = require('../models/Question');
 
-// Submit quiz results
 router.post('/', auth, async (req, res) => {
   const { score } = req.body;
 
@@ -24,7 +21,6 @@ router.post('/', auth, async (req, res) => {
   }
 });
 
-// Fetch quiz results
 router.get('/results', auth, async (req, res) => {
   try {
     const quizzes = await Quiz.find({ userId: req.user.id });
@@ -35,7 +31,6 @@ router.get('/results', auth, async (req, res) => {
   }
 });
 
-// Fetch quiz questions (example implementation)
 router.get('/questions', auth, async (req, res) => {
   try {
     const questions = await Question.find();
