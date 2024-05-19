@@ -57,7 +57,4 @@ realestate_scraping/
 
 Check out the [example_usage.ipynb](examples/example_usage.ipynb) Jupyter notebook or [example_usage.py](examples/example_usage.py) Python script to see how to use the scraper in your own projects.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
