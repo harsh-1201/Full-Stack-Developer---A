@@ -1,5 +1,3 @@
-// backend/models/Quiz.js
-
 const mongoose = require('mongoose');
 
 const QuizSchema = new mongoose.Schema({
