@@ -1,5 +1,3 @@
-// backend/models/User.js
-
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
@@ -26,7 +24,6 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-// Pre-save middleware to hash password before saving
 UserSchema.pre('save', async function (next) {
   if (!this.isModified('password')) {
     return next();
@@ -41,7 +38,6 @@ UserSchema.pre('save', async function (next) {
   }
 });
 
-// Method to compare password
 UserSchema.methods.comparePassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
