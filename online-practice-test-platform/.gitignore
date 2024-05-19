@@ -1,1 +1,17 @@
+node_modules/
+
+dist/
+build/
+*.log
+
+.env
+
+.vscode/
+.idea/
+
+/client/node_modules
+/server/node_modules
+
+.DS_Store
+Thumbs.db
 
