@@ -1,5 +1,3 @@
-// backend/routes/auth.js
-
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
@@ -9,7 +7,6 @@ const User = require('../models/User');
 
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
-// Register a new user
 router.post('/signup', async (req, res) => {
   const { email, password } = req.body;
 
@@ -42,7 +39,6 @@ router.post('/signup', async (req, res) => {
   }
 });
 
-// Login user
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
@@ -73,7 +69,6 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// Google OAuth
 router.post('/google', async (req, res) => {
   const { tokenId } = req.body;
 
